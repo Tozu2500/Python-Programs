@@ -24,7 +24,7 @@ class SystemInfo:
         cpu_freq = psutil.cpu_freq()
         return {
             'physical_cores': psutil.cpu_count(logical=False),
-            'logical-cores': psutil.cpu_count(logical=True),
+            'logical_cores': psutil.cpu_count(logical=True),
             'current_freq': cpu_freq.current if cpu_freq else None,
             'max_freq': cpu_freq.max if cpu_freq else None,
             'usage_percent': psutil.cpu_percent(),
