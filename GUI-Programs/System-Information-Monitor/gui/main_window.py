@@ -74,6 +74,6 @@ class SystemInfoApp(QMainWindow):
             }
         """)
 
-    def update_dynamic(self):
+    def update_dynamic_info(self):
         for tab in self.dynamic_tabs:
             tab.update_content()
